@@ -2,34 +2,42 @@
 <html>
 <head>
 <meta charset="utf-8">
+
 <style>
 html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
-iframe {
+/* questo è il trucco */
+.scale-container {
   width: 100%;
   height: 100%;
-  border: none;
-  overflow: hidden;
+  transform: scale(0.95);
+  transform-origin: top left;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="wrapper">
-  <iframe src="https://6dc012572fd74e5f9a9635f1f7222bbd.elf.site"></iframe>
+  <div class="scale-container">
+
+    <!-- CODICE ELFSIGHT QUI -->
+    
+  </div>
 </div>
 
 </body>
